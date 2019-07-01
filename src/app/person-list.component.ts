@@ -35,4 +35,7 @@ export class PersonListComponent implements OnInit {
 
     this.dataSource.datasourceSubject.subscribe(personList => this.personListChange.emit(personList));
   }
+  getTotalCost() {
+    return this.personList.map(t => t.payment).reduce((acc, value) => acc + value, 0);
+  }
 }
