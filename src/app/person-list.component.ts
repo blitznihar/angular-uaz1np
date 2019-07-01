@@ -19,7 +19,7 @@ export class PersonListComponent implements OnInit {
   displayedColumns = ['policyno', 'name', 'age', 'actionsColumn'];
 
   @Input() personList = [ 
-    { policyno: '123123', name: 'Mark', age: 15 },
+    { policyno: '123124', name: 'Mark', age: 15 },
     { policyno: '123123', name: 'Brad', age: 50 },
     ] ;
   @Output() personListChange = new EventEmitter<Person[]>();
