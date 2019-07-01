@@ -9,6 +9,7 @@ export class PersonValidatorService implements ValidatorService {
       'policyno': new FormControl(),
       'name': new FormControl(null, Validators.required),
       'age': new FormControl(),
+      'payment': new FormControl(null, Validators.required),
       });
   }
 }

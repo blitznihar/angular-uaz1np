@@ -16,11 +16,11 @@ export class PersonListComponent implements OnInit {
 
   constructor(private personValidator: ValidatorService) { }
 
-  displayedColumns = ['policyno', 'name', 'age', 'actionsColumn'];
+  displayedColumns = ['policyno', 'name', 'age', 'payment', 'actionsColumn'];
 
   @Input() personList = [ 
-    { policyno: '123124', name: 'Mark', age: 15 },
-    { policyno: '123123', name: 'Brad', age: 50 },
+    { policyno: '123124', name: 'Mark', age: 15, payment: 2500 },
+    { policyno: '123123', name: 'Brad', age: 50, payment: 3200 },
     ] ;
   @Output() personListChange = new EventEmitter<Person[]>();
 

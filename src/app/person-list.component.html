@@ -23,6 +23,14 @@
       </mat-form-field>
     </mat-cell>
   </ng-container>
+  <ng-container matColumnDef="payment">
+    <mat-header-cell *matHeaderCellDef> Payment </mat-header-cell>
+    <mat-cell *matCellDef="let row">
+      <mat-form-field floatLabel="{{ row.editing ? 'float' : 'never'}}">
+        <input matInput [formControl]="row.validator.controls['payment']" type="number" placeholder="Payment" [(ngModel)]="row.currentData.payment">
+      </mat-form-field>
+    </mat-cell>
+  </ng-container>
   <ng-container matColumnDef="actionsColumn">
     <mat-header-cell *matHeaderCellDef>
       <button mat-icon-button color="accent" (click)="dataSource.createNew()"><i class="fa fa-plus mat-icon"></i></button>
