@@ -8,14 +8,16 @@ import {
   MatIconModule,
   MatButtonModule,
   MatInputModule,
-  MatTableModule
+  MatTableModule,
+  MatDividerModule,
+  MatListModule,
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { PersonListComponent } from './person-list.component';
 
 @NgModule({
-  imports: [ 
+  imports: [
     CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
@@ -24,9 +26,11 @@ import { PersonListComponent } from './person-list.component';
     MatButtonModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatDividerModule,
+    MatListModule,
   ],
-  declarations: [ AppComponent, PersonListComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [AppComponent, PersonListComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

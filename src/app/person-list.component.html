@@ -54,10 +54,11 @@
   <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
   <!-- <mat-footer-row *matFooterRowDef="displayedColumns"></mat-footer-row> -->
 </mat-table>
-
+<mat-divider></mat-divider>
 <div class="example-container">
  <h3>Total Expected Payment:   <span class="badge badge-secondary">{{getTotalCost()| currency}}</span></h3>
 </div>
+<mat-divider></mat-divider>
 <div class="example-container">
  <mat-form-field>
   <input matInput value="" placeholder="Routing Number" #message>
