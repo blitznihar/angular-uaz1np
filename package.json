@@ -23,7 +23,9 @@
     "@angular/material-moment-adapter": "8.0.1",
     "@angular/platform-browser-dynamic": "8.0.3",
     "angular4-material-table": "^0.7.0",
-    "lodash.clonedeep": "^4.5.0"
+    "lodash.clonedeep": "^4.5.0",
+    "ngx-webcam": "0.1.6",
+    "rxjs-compat": "6.2.1"
   },
   "scripts": {
     "ng": "ng",

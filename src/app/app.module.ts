@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import {WebcamModule} from 'ngx-webcam';
 import {
   MatIconModule,
   MatButtonModule,
@@ -31,6 +32,7 @@ import { PersonListComponent } from './person-list.component';
     MatDividerModule,
     MatListModule,
     MatSnackBarModule,
+    WebcamModule,
   ],
   declarations: [AppComponent, PersonListComponent],
   bootstrap: [AppComponent]
