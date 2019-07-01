@@ -1,4 +1,12 @@
 <mat-table class="table-margin-bottom" #table [dataSource]="dataSource">
+  <ng-container matColumnDef="policyno">
+    <mat-header-cell *matHeaderCellDef> Policy No</mat-header-cell>
+    <mat-cell *matCellDef="let row">
+      <mat-form-field floatLabel="{{ row.editing ? 'float' : 'never'}}">
+        <input matInput [formControl]="row.validator.controls['policyno']" [readonly]="!row.editing" placeholder="Policyno" [(ngModel)]="row.currentData.policyno">
+      </mat-form-field>
+    </mat-cell>
+  </ng-container>
   <ng-container matColumnDef="name">
     <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
     <mat-cell *matCellDef="let row">
