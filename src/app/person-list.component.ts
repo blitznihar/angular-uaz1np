@@ -1,4 +1,5 @@
-import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit} from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { TableDataSource, ValidatorService } from 'angular4-material-table';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import { PersonValidatorService } from './person-validator.service';
@@ -38,6 +39,9 @@ export class PersonListComponent implements OnInit {
   }
   getTotalCost() {
     return this.personList.map(t => t.payment).reduce((acc, value) => acc + value, 0);
+  }
+
+    openDialog() {
   }
 
 }

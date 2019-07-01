@@ -11,6 +11,7 @@ import {
   MatTableModule,
   MatDividerModule,
   MatListModule,
+  MatSnackBarModule,
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { PersonListComponent } from './person-list.component';
     ReactiveFormsModule,
     MatDividerModule,
     MatListModule,
+    MatSnackBarModule,
   ],
   declarations: [AppComponent, PersonListComponent],
   bootstrap: [AppComponent]
