@@ -1,8 +1,9 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { TableDataSource, ValidatorService } from 'angular4-material-table';
-
+import {MatSnackBar} from '@angular/material/snack-bar';
 import { PersonValidatorService } from './person-validator.service';
 import { Person } from './person';
+
 
 @Component({
   selector: 'app-person-list',
@@ -38,4 +39,5 @@ export class PersonListComponent implements OnInit {
   getTotalCost() {
     return this.personList.map(t => t.payment).reduce((acc, value) => acc + value, 0);
   }
+
 }
