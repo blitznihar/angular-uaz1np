@@ -31,8 +31,7 @@ import { PersonListComponent } from './person-list.component';
     MatDividerModule,
     MatListModule,
     MatSnackBarModule,
-    WebcamModule,
-    PersonListComponent
+    WebcamModule
   ],
   declarations: [AppComponent, PersonListComponent],
   bootstrap: [AppComponent]
