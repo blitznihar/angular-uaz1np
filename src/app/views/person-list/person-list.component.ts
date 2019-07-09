@@ -84,7 +84,6 @@ export class PersonListComponent implements OnInit {
 
   public triggerSnapshot(): void {
     this.trigger.next();
-    this.showWebcam = false;
   }
 
   public toggleWebcam(): void {
@@ -104,9 +103,7 @@ export class PersonListComponent implements OnInit {
 
   public handleImage(webcamImage: WebcamImage): void {
     console.info('received webcam image', webcamImage);
-    this.webcamImage = webcamImage;
     this.pictureTaken.emit(webcamImage);
-
   }
 
   public cameraWasSwitched(deviceId: string): void {
@@ -121,8 +118,6 @@ export class PersonListComponent implements OnInit {
   public get nextWebcamObservable(): Observable<boolean|string> {
     return this.nextWebcam.asObservable();
   }
-
-public webcamImage: WebcamImage = null;
 
 
 
